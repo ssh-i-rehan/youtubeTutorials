@@ -14,8 +14,7 @@ class MergeSort
     	
     	System.out.println("Sorted Array");
     	printArray(arr);
-    	
-        
+    	 
     }
 
 	private static void mergeSort(int[] arr, int l, int r) {
@@ -30,14 +29,12 @@ class MergeSort
 			mergeSort(arr,mid+1,r);
 			
 			merge(arr,l,mid,r);
-			
-			
+	
 		}
 	}
 
 	private static void merge(int[] arr, int l, int mid, int r) {
 		// TODO Auto-generated method stub
-		
 		
 		int tmpArr[] = new int[r-l+1];
 		int i=l,j=mid+1,k=0;
